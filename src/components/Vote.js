@@ -13,9 +13,10 @@ export default React.createClass({
     return this.props.hasVoted === entry;
   },
   render() {
-    return <div className="voting">
+    return <div className="voting mdl-grid">
       {this.getPair().map(entry =>
-          <button key={entry}
+        <button   className="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col"
+                  key={entry}
                   disabled={this.isDisabled()}
                   onClick={() => this.props.vote(entry)}>
             <h1>{entry}</h1>

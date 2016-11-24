@@ -1,0 +1,12 @@
+.voting button {
+  border: none;
+  height: 95vh;
+}
+
+@media (max-width: 840px) {
+  .voting button {
+    height: 45vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

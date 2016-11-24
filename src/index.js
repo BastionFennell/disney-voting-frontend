@@ -10,7 +10,10 @@ import io from 'socket.io-client';
 import {Router, Route, hashHistory} from 'react-router';
 import {VotingContainer} from './components/Voting';
 import {ResultsContainer} from './components/Results';
-import './index.css';
+import './styles/index.css';
+import './styles/voting.css';
+import './styles/material.min.css';
+import './material.min.js';
 
 const socket = io(`${location.protocol}//${location.hostname}:8090`);
 socket.on('state', state =>
