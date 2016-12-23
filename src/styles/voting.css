@@ -1,6 +1,20 @@
 .voting button {
   border: none;
   height: 95vh;
+  cursor: pointer;
+  border-radius: 3px;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.voting button:hover, .voting button.voted-for {
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
+  -moz-box-shadow: 0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12),0 5px 5px -3px rgba(0,0,0,.2);
+}
+
+.voting button.voted-against {
+  opacity: .7
 }
 
 @media (max-width: 840px) {

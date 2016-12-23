@@ -1,0 +1,28 @@
+.mdl-card.background-image {
+  background-size: cover;
+  background-position-x: 50%;
+}
+
+.mdl-card.background-image .background-image__text {
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: rgba(0, 0, 0, .4);
+  color: white;
+}
+
+.mdl-card.background-image .background-image__text h2{
+  font-size: 2rem;
+}
+
+.mdl-card.beauty-and-the-beast {
+  background-image: url('/images/beauty-and-the-beast.jpg');
+}
+
+.mdl-card.cinderella {
+  background-image: url('/images/cinderella.jpg');
+}
